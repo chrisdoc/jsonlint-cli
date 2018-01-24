@@ -1,5 +1,5 @@
 const debuglog = require('util').debuglog;
-const readFileNodeback = require('fs').readFile;
+const readFileNodeback = require('graceful-fs').readFile;
 const denodeify = require('denodeify');
 
 const readFile = denodeify(readFileNodeback);
